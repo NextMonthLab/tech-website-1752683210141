@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Transform your business with our innovative SaaS solutions. Streamline workflows, boost productivity, and drive growth with enterprise-grade tools.">
+    <title>CloudFlow | Enterprise SaaS Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #007BFF;
+            --secondary: #00C853;
+            --accent: #FF4081;
+            --bg-light: #F7F9FC;
+            --text-dark: #212529;
+            --shadow: 0 4px 6px rgba(0,0,0,0.1);
+            --transition: all 0.3s ease;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--bg-light);
+        }
+        header {
+            position: fixed;
+            width: 100%;
+            background: rgba(255,255,255,0.95);
+            padding: 1rem;
+            box-shadow: var(--shadow);
+            z-index: 1000;
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        nav ul {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        nav a:hover {
+            color: var(--primary);
+        }
+        .btn {
+            background: var(--primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 6rem 2rem 2rem;
+            background: linear-gradient(135deg, var(--bg-light) 0%, #E8F0FE 100%);
+        }
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        .hero h1 {
+            font-family: 'Inter', sans-serif;
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+        }
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            color: #555;
+        }
+        .features {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-family: 'Inter', sans-serif;
+        }
+        footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 4rem 2rem;
+            margin-top: 4rem;
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+        }
+        @media (max-width: 768px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            nav ul {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">CloudFlow</a>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div>
+                <h1>Transform Your Business with Smart Automation</h1>
+                <p>Streamline workflows, boost productivity, and drive growth with our enterprise-grade SaaS platform.</p>
+                <a href="#" class="btn">Start Free Trial</a>
+            </div>
+            <div class="hero-image">
+                <img src="dashboard-preview.png" alt="Platform Dashboard" style="max-width: 100%; height: auto;">
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <h2 style="text-align: center; font-family: 'Inter', sans-serif; font-size: 2.5rem; margin-bottom: 1rem;">Powerful Features</h2>
+        <p style="text-align: center; max-width: 600px; margin: 0 auto; color: #555;">Everything you need to manage your business operations efficiently in one place.</p>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Smart Automation</h3>
+                <p>Automate repetitive tasks and workflows to save time and reduce errors.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Real-time Analytics</h3>
+                <p>Get instant insights into your business performance with advanced analytics.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Team Collaboration</h3>
+                <p>Enable seamless communication and collaboration across your organization.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Security First</h3>
+                <p>Enterprise-grade security to protect your sensitive business data.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3 style="margin-bottom: 1rem;">CloudFlow</h3>
+                <p>Transforming businesses through innovative SaaS solutions.</p>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 1rem;">Quick Links</h4>
+                <ul style="list-style: none;">
+                    <li><a href="#" style="color: white; text-decoration: none;">Features</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Pricing</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">About</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 1rem;">Contact</h4>
+                <p>Email: contact@cloudflow.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
